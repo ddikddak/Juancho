@@ -59,10 +59,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Infrastructure
 
-- [ ] **INFR-01**: Telegram as primary interface with rich formatting (code blocks, files, buttons)
-- [ ] **INFR-02**: Remote VPS deployment with headless browser infrastructure
-- [ ] **INFR-03**: Multi-provider AI support (keep OpenClaw's existing flexibility)
-- [ ] **INFR-04**: Upstream sync capability (pull OpenClaw improvements without breaking customizations)
+**Note:** INFR-01 through INFR-04 are inherited capabilities from OpenClaw. Phase 4 verifies they work in Juancho context, no major implementation needed.
+
+- [ ] **INFR-01**: Telegram as primary interface with rich formatting (code blocks, files, buttons) — INHERITED from OpenClaw
+- [ ] **INFR-02**: Remote VPS deployment with headless browser infrastructure — INHERITED from OpenClaw
+- [ ] **INFR-03**: Multi-provider AI support (keep OpenClaw's existing flexibility) — INHERITED from OpenClaw
+- [ ] **INFR-04**: Upstream sync capability (pull OpenClaw improvements without breaking customizations) — INHERITED from OpenClaw
 
 ## v2 Requirements
 
@@ -100,47 +102,48 @@ Deferred to future release. Tracked but not in current roadmap.
 
 ## Traceability
 
-| Requirement | Phase | Status |
-|-------------|-------|--------|
-| IDEN-01 | TBD | Pending |
-| IDEN-02 | TBD | Pending |
-| IDEN-03 | TBD | Pending |
-| IDEN-04 | TBD | Pending |
-| GSD-01 | TBD | Pending |
-| GSD-02 | TBD | Pending |
-| GSD-03 | TBD | Pending |
-| GSD-04 | TBD | Pending |
-| GSD-05 | TBD | Pending |
-| PROA-01 | TBD | Pending |
-| PROA-02 | TBD | Pending |
-| PROA-03 | TBD | Pending |
-| PROA-04 | TBD | Pending |
-| PROA-05 | TBD | Pending |
-| PROA-06 | TBD | Pending |
-| GIT-01 | TBD | Pending |
-| GIT-02 | TBD | Pending |
-| GIT-03 | TBD | Pending |
-| GIT-04 | TBD | Pending |
-| TEST-01 | TBD | Pending |
-| TEST-02 | TBD | Pending |
-| TEST-03 | TBD | Pending |
-| TEST-04 | TBD | Pending |
-| BROW-01 | TBD | Pending |
-| BROW-02 | TBD | Pending |
-| BROW-03 | TBD | Pending |
-| DOCS-01 | TBD | Pending |
-| DOCS-02 | TBD | Pending |
-| DOCS-03 | TBD | Pending |
-| INFR-01 | TBD | Pending |
-| INFR-02 | TBD | Pending |
-| INFR-03 | TBD | Pending |
-| INFR-04 | TBD | Pending |
+| Requirement | Phase | Status | Notes |
+|-------------|-------|--------|-------|
+| IDEN-01 | Phase 1 | Pending | Core system prompts rewrite |
+| IDEN-03 | Phase 1 | Pending | Developer persona in interactions |
+| GSD-01 | Phase 2 | Pending | .planning/ structure |
+| GSD-02 | Phase 2 | Pending | Intensive questioning stage |
+| GSD-03 | Phase 2 | Pending | Research → plan → build → test |
+| GSD-04 | Phase 2 | Pending | Configurable autonomy |
+| GSD-05 | Phase 2 | Pending | Task stack tracking |
+| DOCS-01 | Phase 2 | Pending | GSD planning docs |
+| BROW-01 | Phase 2 | Pending | Browser research before coding |
+| GIT-01 | Phase 3 | Pending | Conventional commits |
+| GIT-02 | Phase 3 | Pending | Feature branches |
+| GIT-03 | Phase 3 | Pending | Pull request generation |
+| GIT-04 | Phase 3 | Pending | Branch naming conventions |
+| TEST-01 | Phase 3 | Pending | Test-first discipline |
+| TEST-02 | Phase 3 | Pending | Checkpoint validation |
+| TEST-03 | Phase 3 | Pending | Build verification |
+| TEST-04 | Phase 3 | Pending | Error detection |
+| BROW-02 | Phase 3 | Pending | Headless browser with Xvfb |
+| BROW-03 | Phase 3 | Pending | Web app testing |
+| PROA-01 | Phase 4 | Pending | Heartbeat cron job |
+| PROA-02 | Phase 4 | Pending | Self-directed phase transitions |
+| PROA-03 | Phase 4 | Pending | Configurable proactivity schedule |
+| PROA-04 | Phase 4 | Pending | Autonomous research when blocked |
+| PROA-05 | Phase 4 | Pending | Plan persistence |
+| PROA-06 | Phase 4 | Pending | Status reporting via Telegram |
+| IDEN-02 | Phase 4 | Pending | Onboarding flow (wraps Phase 2 GSD pipeline) |
+| IDEN-04 | Phase 4 | Pending | Telegram commands (thin wrappers for built functionality) |
+| DOCS-02 | Phase 4 | Pending | Code documentation generation |
+| DOCS-03 | Phase 4 | Pending | Work logs |
+| INFR-01 | Phase 4 | Pending | Telegram interface verification (INHERITED) |
+| INFR-02 | Phase 4 | Pending | VPS deployment verification (INHERITED) |
+| INFR-03 | Phase 4 | Pending | Multi-provider AI verification (INHERITED) |
+| INFR-04 | Phase 4 | Pending | Upstream sync verification (INHERITED) |
 
 **Coverage:**
 - v1 requirements: 33 total
-- Mapped to phases: 0 (pending roadmap)
-- Unmapped: 33
+- Mapped to phases: 33 (100% coverage)
+- Unmapped: 0
+- Infrastructure requirements: 4 inherited from OpenClaw (verification only)
 
 ---
 *Requirements defined: 2026-02-14*
-*Last updated: 2026-02-14 after initial definition*
+*Last updated: 2026-02-14 after roadmap revision — consolidated to 4 phases, infrastructure moved to Phase 4 as verification*
