@@ -9,9 +9,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Developer Identity
 
-- [ ] **IDEN-01**: System prompts (SOUL.md, AGENTS.md) rewritten for coding-focused developer persona, reusing OpenClaw's existing workspace file system
+- [x] **IDEN-01**: System prompts (SOUL.md, AGENTS.md) rewritten for coding-focused developer persona, reusing OpenClaw's existing workspace file system
 - [ ] **IDEN-02**: Onboarding flow redesigned as Juancho-branded developer experience (not generic assistant setup — walks user through repo connection, git config, AI provider setup, first project definition)
-- [ ] **IDEN-03**: Juancho developer persona with engineering discipline baked into all interactions, leveraging OpenClaw's existing agent identity system
+- [x] **IDEN-03**: Juancho developer persona with engineering discipline baked into all interactions, leveraging OpenClaw's existing agent identity system
 - [ ] **IDEN-04**: Coding-specific Telegram commands reusing OpenClaw's existing native command system (status, commit, test, phase, research)
 
 ### GSD Workflow Pipeline
@@ -104,8 +104,8 @@ Deferred to future release. Tracked but not in current roadmap.
 
 | Requirement | Phase | Status | Notes |
 |-------------|-------|--------|-------|
-| IDEN-01 | Phase 1 | Pending | Core system prompts rewrite |
-| IDEN-03 | Phase 1 | Pending | Developer persona in interactions |
+| IDEN-01 | Phase 1 | Complete | Core system prompts rewrite |
+| IDEN-03 | Phase 1 | Complete | Developer persona in interactions |
 | GSD-01 | Phase 2 | Pending | .planning/ structure |
 | GSD-02 | Phase 2 | Pending | Intensive questioning stage |
 | GSD-03 | Phase 2 | Pending | Research → plan → build → test |
@@ -146,4 +146,4 @@ Deferred to future release. Tracked but not in current roadmap.
 
 ---
 *Requirements defined: 2026-02-14*
-*Last updated: 2026-02-14 after roadmap revision — consolidated to 4 phases, infrastructure moved to Phase 4 as verification*
+*Last updated: 2026-02-15 — Phase 1 requirements (IDEN-01, IDEN-03) marked complete*
