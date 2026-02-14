@@ -27,10 +27,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   1. System prompts (SOUL.md, AGENTS.md) rewritten to define Juancho as coding-focused developer, not general assistant
   2. Agent identity reflects engineering discipline in all interactions (research before code, test after changes, document decisions)
   3. Juancho responds with developer context (talks about phases, tests, PRs, not generic tasks)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 01-01: [Plan description TBD during planning]
+- [ ] 01-01-PLAN.md -- Write developer workspace files (SOUL.md, AGENTS.md, TOOLS.md, IDENTITY.md) and register Juancho agent in openclaw.json
 
 ### Phase 2: GSD Pipeline Integration
 **Goal**: Juancho creates and manages .planning/ directory structure, orchestrates phase-based execution, and maintains project state
