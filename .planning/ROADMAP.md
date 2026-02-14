@@ -44,10 +44,11 @@ Plans:
   5. Task stack tracks what's done, in progress, blocked, pending across all phases
   6. GSD planning docs persist in .planning/ and drive execution
   7. Browser research runs before coding (using OpenClaw's existing Stagehand/Puppeteer capabilities)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: [Plan description TBD during planning]
+- [ ] 02-01-PLAN.md -- Create 6 GSD workspace skills (new-project, discuss-phase, research-phase, plan-phase, execute-phase, verify-phase)
+- [ ] 02-02-PLAN.md -- Create status/resume skills, update AGENTS.md with GSD pipeline references and autonomy levels
 
 ### Phase 3: Git & Testing Workflow
 **Goal**: Every phase produces commits with conventional format, tests run automatically, phase transitions require passing test suite, and browser testing verifies built features
@@ -102,10 +103,10 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Developer Identity & Persona | 1/1 | Complete | 2026-02-15 |
-| 2. GSD Pipeline Integration | 0/? | Not started | - |
+| 2. GSD Pipeline Integration | 0/2 | Not started | - |
 | 3. Git & Testing Workflow | 0/? | Not started | - |
 | 4. Proactive Autonomy & UX | 0/? | Not started | - |
 
 ---
 *Roadmap created: 2026-02-14*
-*Last updated: 2026-02-15 (Phase 1 complete — developer identity established via workspace files)*
+*Last updated: 2026-02-15 (Phase 2 planned — 2 plans in 1 wave, parallel execution)*
