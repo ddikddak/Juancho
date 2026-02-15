@@ -64,10 +64,12 @@ Plans:
   7. Errors surfaced and debugged, not suppressed
   8. Headless browser works reliably on VPS with Xvfb (verifying OpenClaw's browser automation works headless)
   9. Built web apps tested via browser to verify they actually work
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: [Plan description TBD during planning]
+- [ ] 03-01-PLAN.md -- Enhance execute-phase with feature branching, PR creation, and test enforcement gate
+- [ ] 03-02-PLAN.md -- Enhance verify-phase with build verification, test suite gate, and browser testing
+- [ ] 03-03-PLAN.md -- Enhance plan-phase with test command requirements, update AGENTS.md with test-first discipline
 
 ### Phase 4: Proactive Autonomy & UX
 **Goal**: Juancho executes work autonomously via cron/heartbeat, exposes functionality through Telegram commands, and provides polished onboarding experience
@@ -104,7 +106,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Developer Identity & Persona | 1/1 | Complete | 2026-02-15 |
 | 2. GSD Pipeline Integration | 2/2 | Complete | 2026-02-15 |
-| 3. Git & Testing Workflow | 0/? | Not started | - |
+| 3. Git & Testing Workflow | 0/3 | Planned | - |
 | 4. Proactive Autonomy & UX | 0/? | Not started | - |
 
 ---
