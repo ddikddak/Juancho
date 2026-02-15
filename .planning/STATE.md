@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-02-14)
 
 **Core value:** An AI developer that follows real engineering discipline and works proactively — writes the plan, then autonomously executes it phase by phase via cron/heartbeat, only interrupting humans for blockers and decisions.
-**Current focus:** Phase 4 - Proactive Autonomy & UX
+**Current focus:** Milestone v1.0 complete
 
 ## Current Position
 
-Phase: 4 of 4 (Proactive Autonomy & UX)
+Phase: 4 of 4 (Proactive Autonomy & UX) — VERIFIED
 Plan: 4 of 4 in current phase
-Status: Complete (awaiting verification checkpoint)
-Last activity: 2026-02-15 — Completed 04-04-PLAN.md
+Status: Complete — all phases verified
+Last activity: 2026-02-15 — Phase 4 verified and complete
 
-Progress: [██████████] 100% (10 of 10 plans complete through Phase 4 Plan 04)
+Progress: [██████████] 100% (10 of 10 plans complete, 4 of 4 phases verified)
 
 ## Performance Metrics
 
@@ -94,18 +94,19 @@ Recent decisions affecting current work:
 - Feature branches per phase: feat/phase-{XX}-{slug}, PR via gh pr create, squash merge to main
 
 **Phase 04-01 decisions:**
-- Heartbeat interval: 5 minutes (balances responsiveness with API costs)
-- Active hours timezone: "user" not "local" (respects user timezone, not VPS location)
+- Heartbeat interval: 30 minutes default (user-configurable in openclaw.json)
+- Active hours timezone: UTC (user-configurable)
 - Idle state handling: HEARTBEAT_OK token (prevents Telegram noise when no work available)
 - Infinite loop prevention: Explicit execution state check before acting
 
 **Phase 04-02 decisions:**
-- Thin wrapper pattern: all logic in existing GSD skills, Telegram wrappers only add UI layer
+- nativeCommand added directly to existing GSD skills (no separate wrappers needed)
+- Only telegram-commit and telegram-test remain as separate utility wrapper skills
 - nativeCommand frontmatter auto-registers commands with Telegram BotFather via OpenClaw
-- File upload for outputs exceeding 20k chars to avoid message chunking issues
-- Interactive inline keyboards provide contextual next-action buttons
+- 11 total Telegram commands: 9 GSD skills + 2 utility wrappers
 
 **Phase 04-03 decisions:**
+- Onboard mirrors OpenClaw setup wizard flow, branded Juancho with blue theme
 - Onboard wraps /new-project rather than duplicating intensive questioning
 - Work logs generated per-plan (not per-phase) for granular decision tracking
 - Documentation generation with 60s timeout to prevent blocking verification
@@ -131,11 +132,11 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-15 10:48 UTC
-Stopped at: Completed 04-04-PLAN.md (AGENTS.md Update & Infrastructure Verification) - awaiting checkpoint verification
+Last session: 2026-02-15 11:50 UTC
+Stopped at: Milestone v1.0 complete — all 4 phases verified
 Resume file: None
-Next: Human verification of Phase 4 complete implementation
+Next: /gsd:audit-milestone or /gsd:complete-milestone
 
 ---
 *State initialized: 2026-02-14*
-*Last updated: 2026-02-15 after completing Phase 4 Plan 04 (AGENTS.md Update & Infrastructure Verification)*
+*Last updated: 2026-02-15 — Milestone v1.0 complete (4 phases, 10 plans, all verified)*

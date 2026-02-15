@@ -10,9 +10,9 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Developer Identity
 
 - [x] **IDEN-01**: System prompts (SOUL.md, AGENTS.md) rewritten for coding-focused developer persona, reusing OpenClaw's existing workspace file system
-- [ ] **IDEN-02**: Onboarding flow redesigned as Juancho-branded developer experience (not generic assistant setup — walks user through repo connection, git config, AI provider setup, first project definition)
+- [x] **IDEN-02**: Onboarding flow redesigned as Juancho-branded developer experience (not generic assistant setup — walks user through repo connection, git config, AI provider setup, first project definition)
 - [x] **IDEN-03**: Juancho developer persona with engineering discipline baked into all interactions, leveraging OpenClaw's existing agent identity system
-- [ ] **IDEN-04**: Coding-specific Telegram commands reusing OpenClaw's existing native command system (status, commit, test, phase, research)
+- [x] **IDEN-04**: Coding-specific Telegram commands reusing OpenClaw's existing native command system (nativeCommand on all GSD skills + /commit, /test utilities)
 
 ### GSD Workflow Pipeline
 
@@ -24,12 +24,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Proactive Autonomy (Cron/Heartbeat)
 
-- [ ] **PROA-01**: Heartbeat cron job (reusing OpenClaw's existing cron/heartbeat system) that periodically checks work status and determines next action
-- [ ] **PROA-02**: Self-directed phase transitions (agent decides to move to next phase when tests pass)
-- [ ] **PROA-03**: Configurable proactivity schedule (active hours, frequency, intensity)
-- [ ] **PROA-04**: When blocked, agent autonomously researches alternatives or works on other tasks
-- [ ] **PROA-05**: Plan persistence — full plan written to .planning/ files, cron reads and executes
-- [ ] **PROA-06**: Status reporting via Telegram at phase transitions and when blocked
+- [x] **PROA-01**: Heartbeat cron job (reusing OpenClaw's existing cron/heartbeat system) that periodically checks work status and determines next action
+- [x] **PROA-02**: Self-directed phase transitions (agent decides to move to next phase when tests pass)
+- [x] **PROA-03**: Configurable proactivity schedule (active hours, frequency, intensity)
+- [x] **PROA-04**: When blocked, agent autonomously researches alternatives or works on other tasks
+- [x] **PROA-05**: Plan persistence — full plan written to .planning/ files, cron reads and executes
+- [x] **PROA-06**: Status reporting via Telegram at phase transitions and when blocked
 
 ### Git Workflow
 
@@ -54,17 +54,17 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Documentation
 
 - [x] **DOCS-01**: GSD planning docs per project (.planning/ with research, requirements, roadmap)
-- [ ] **DOCS-02**: Code documentation generation (README, API docs, inline comments)
-- [ ] **DOCS-03**: Work logs with decisions, reasoning, and tradeoffs documented
+- [x] **DOCS-02**: Code documentation generation (README, API docs, inline comments)
+- [x] **DOCS-03**: Work logs with decisions, reasoning, and tradeoffs documented
 
 ### Infrastructure
 
 **Note:** INFR-01 through INFR-04 are inherited capabilities from OpenClaw. Phase 4 verifies they work in Juancho context, no major implementation needed.
 
-- [ ] **INFR-01**: Telegram as primary interface with rich formatting (code blocks, files, buttons) — INHERITED from OpenClaw
-- [ ] **INFR-02**: Remote VPS deployment with headless browser infrastructure — INHERITED from OpenClaw
-- [ ] **INFR-03**: Multi-provider AI support (keep OpenClaw's existing flexibility) — INHERITED from OpenClaw
-- [ ] **INFR-04**: Upstream sync capability (pull OpenClaw improvements without breaking customizations) — INHERITED from OpenClaw
+- [x] **INFR-01**: Telegram as primary interface with rich formatting (code blocks, files, buttons) — INHERITED from OpenClaw (verified)
+- [x] **INFR-02**: Remote VPS deployment with headless browser infrastructure — INHERITED from OpenClaw (verified)
+- [x] **INFR-03**: Multi-provider AI support (keep OpenClaw's existing flexibility) — INHERITED from OpenClaw (verified)
+- [x] **INFR-04**: Upstream sync capability (pull OpenClaw improvements without breaking customizations) — INHERITED from OpenClaw (verified)
 
 ## v2 Requirements
 
@@ -123,27 +123,27 @@ Deferred to future release. Tracked but not in current roadmap.
 | TEST-04 | Phase 3 | Complete | Error surfacing in execute-phase |
 | BROW-02 | Phase 3 | Complete | Xvfb/Playwright in verify-phase |
 | BROW-03 | Phase 3 | Complete | Browser testing checklist |
-| PROA-01 | Phase 4 | Pending | Heartbeat cron job |
-| PROA-02 | Phase 4 | Pending | Self-directed phase transitions |
-| PROA-03 | Phase 4 | Pending | Configurable proactivity schedule |
-| PROA-04 | Phase 4 | Pending | Autonomous research when blocked |
-| PROA-05 | Phase 4 | Pending | Plan persistence |
-| PROA-06 | Phase 4 | Pending | Status reporting via Telegram |
-| IDEN-02 | Phase 4 | Pending | Onboarding flow (wraps Phase 2 GSD pipeline) |
-| IDEN-04 | Phase 4 | Pending | Telegram commands (thin wrappers for built functionality) |
-| DOCS-02 | Phase 4 | Pending | Code documentation generation |
-| DOCS-03 | Phase 4 | Pending | Work logs |
-| INFR-01 | Phase 4 | Pending | Telegram interface verification (INHERITED) |
-| INFR-02 | Phase 4 | Pending | VPS deployment verification (INHERITED) |
-| INFR-03 | Phase 4 | Pending | Multi-provider AI verification (INHERITED) |
-| INFR-04 | Phase 4 | Pending | Upstream sync verification (INHERITED) |
+| PROA-01 | Phase 4 | Complete | Heartbeat cron job (30m, UTC, configurable) |
+| PROA-02 | Phase 4 | Complete | Self-directed phase transitions in heartbeat.md |
+| PROA-03 | Phase 4 | Complete | Configurable proactivity (every, activeHours, timezone) |
+| PROA-04 | Phase 4 | Complete | Blocked state suggests alternatives in heartbeat.md |
+| PROA-05 | Phase 4 | Complete | Plans persist in .planning/, heartbeat reads STATE.md |
+| PROA-06 | Phase 4 | Complete | Telegram delivery via heartbeat target |
+| IDEN-02 | Phase 4 | Complete | Blue-themed onboarding wrapping /new-project |
+| IDEN-04 | Phase 4 | Complete | nativeCommand on all GSD skills + /commit, /test utilities |
+| DOCS-02 | Phase 4 | Complete | Doc generation in verify-phase (TypeDoc, pdoc, 60s timeout) |
+| DOCS-03 | Phase 4 | Complete | Work log generation in execute-phase per plan |
+| INFR-01 | Phase 4 | Complete | Telegram chunking/upload/keyboards verified |
+| INFR-02 | Phase 4 | Complete | Playwright + Xvfb verified |
+| INFR-03 | Phase 4 | Complete | Claude/OpenAI/Gemini/Ollama verified |
+| INFR-04 | Phase 4 | Complete | Zero src/ changes, workspace-only customization |
 
 **Coverage:**
 - v1 requirements: 33 total
 - Mapped to phases: 33 (100% coverage)
+- Complete: 33 (100%)
 - Unmapped: 0
-- Infrastructure requirements: 4 inherited from OpenClaw (verification only)
 
 ---
 *Requirements defined: 2026-02-14*
-*Last updated: 2026-02-15 — Phase 3 requirements (GIT-01–04, TEST-01–04, BROW-02–03) marked complete*
+*Last updated: 2026-02-15 — All v1 requirements complete (Phase 4: PROA-01–06, IDEN-02, IDEN-04, DOCS-02–03, INFR-01–04)*

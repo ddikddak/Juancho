@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Developer Identity & Persona** - Rewrite system prompts and agent identity for coding-focused developer
 - [x] **Phase 2: GSD Pipeline Integration** - Build .planning/ workspace structure and orchestration tools
 - [x] **Phase 3: Git & Testing Workflow** - Automated phase commits, test enforcement, and browser research
-- [ ] **Phase 4: Proactive Autonomy & UX** - Cron/heartbeat execution, Telegram commands, and onboarding flow
+- [x] **Phase 4: Proactive Autonomy & UX** - Cron/heartbeat execution, Telegram commands, and onboarding flow
 
 ## Phase Details
 
@@ -95,10 +95,10 @@ Plans:
 **Plans**: 4 plans
 
 Plans:
-- [ ] 04-01-PLAN.md -- Configure heartbeat for proactive autonomous execution (openclaw.json + heartbeat.md)
-- [ ] 04-02-PLAN.md -- Create 5 Telegram command wrapper skills (/status, /commit, /test, /phase, /research)
-- [ ] 04-03-PLAN.md -- Create onboarding skill, enhance execute-phase with work logging, enhance verify-phase with doc generation
-- [ ] 04-04-PLAN.md -- Update AGENTS.md with Phase 4 capabilities, verify inherited infrastructure (INFR-01-04)
+- [x] 04-01-PLAN.md -- Configure heartbeat for proactive autonomous execution (openclaw.json + heartbeat.md)
+- [x] 04-02-PLAN.md -- Create Telegram command skills (nativeCommand on GSD skills + /commit, /test utilities)
+- [x] 04-03-PLAN.md -- Create onboarding skill, enhance execute-phase with work logging, enhance verify-phase with doc generation
+- [x] 04-04-PLAN.md -- Update AGENTS.md with Phase 4 capabilities, verify inherited infrastructure (INFR-01-04)
 
 ## Progress
 
@@ -110,8 +110,8 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. Developer Identity & Persona | 1/1 | Complete | 2026-02-15 |
 | 2. GSD Pipeline Integration | 2/2 | Complete | 2026-02-15 |
 | 3. Git & Testing Workflow | 3/3 | Complete | 2026-02-15 |
-| 4. Proactive Autonomy & UX | 0/4 | Planned | - |
+| 4. Proactive Autonomy & UX | 4/4 | Complete | 2026-02-15 |
 
 ---
 *Roadmap created: 2026-02-14*
-*Last updated: 2026-02-15 (Phase 4 planned -- heartbeat, Telegram commands, onboarding, docs/logging, infra verification)*
+*Last updated: 2026-02-15 (Phase 4 complete — all 4 phases finished, milestone v1.0 complete)*
