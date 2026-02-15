@@ -33,23 +33,23 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Git Workflow
 
-- [ ] **GIT-01**: Git commits per phase with conventional commit format
-- [ ] **GIT-02**: Feature branches per project/milestone
-- [ ] **GIT-03**: Pull request creation with summary of changes
-- [ ] **GIT-04**: Branch naming conventions enforced
+- [x] **GIT-01**: Git commits per phase with conventional commit format
+- [x] **GIT-02**: Feature branches per project/milestone
+- [x] **GIT-03**: Pull request creation with summary of changes
+- [x] **GIT-04**: Branch naming conventions enforced
 
 ### Testing & QA
 
-- [ ] **TEST-01**: Test-first discipline — run tests after each code change
-- [ ] **TEST-02**: Checkpoint validation — test suite must pass before moving to next phase
-- [ ] **TEST-03**: Build verification — ensure project builds successfully per phase
-- [ ] **TEST-04**: Error detection and debugging — surface failures, don't suppress them
+- [x] **TEST-01**: Test-first discipline — run tests after each code change
+- [x] **TEST-02**: Checkpoint validation — test suite must pass before moving to next phase
+- [x] **TEST-03**: Build verification — ensure project builds successfully per phase
+- [x] **TEST-04**: Error detection and debugging — surface failures, don't suppress them
 
 ### Browser & Research
 
 - [x] **BROW-01**: Browser research phase before coding (docs, APIs, patterns, examples)
-- [ ] **BROW-02**: Headless browser on VPS with Xvfb for reliable browser automation
-- [ ] **BROW-03**: Web app testing via browser (verify built features actually work)
+- [x] **BROW-02**: Headless browser on VPS with Xvfb for reliable browser automation
+- [x] **BROW-03**: Web app testing via browser (verify built features actually work)
 
 ### Documentation
 
@@ -113,16 +113,16 @@ Deferred to future release. Tracked but not in current roadmap.
 | GSD-05 | Phase 2 | Complete | Task stack tracking |
 | DOCS-01 | Phase 2 | Complete | GSD planning docs |
 | BROW-01 | Phase 2 | Complete | Browser research before coding |
-| GIT-01 | Phase 3 | Pending | Conventional commits |
-| GIT-02 | Phase 3 | Pending | Feature branches |
-| GIT-03 | Phase 3 | Pending | Pull request generation |
-| GIT-04 | Phase 3 | Pending | Branch naming conventions |
-| TEST-01 | Phase 3 | Pending | Test-first discipline |
-| TEST-02 | Phase 3 | Pending | Checkpoint validation |
-| TEST-03 | Phase 3 | Pending | Build verification |
-| TEST-04 | Phase 3 | Pending | Error detection |
-| BROW-02 | Phase 3 | Pending | Headless browser with Xvfb |
-| BROW-03 | Phase 3 | Pending | Web app testing |
+| GIT-01 | Phase 3 | Complete | Conventional commits in execute-phase |
+| GIT-02 | Phase 3 | Complete | Feature branches in execute-phase |
+| GIT-03 | Phase 3 | Complete | PR creation via gh CLI |
+| GIT-04 | Phase 3 | Complete | Branch naming feat/phase-{XX}-{slug} |
+| TEST-01 | Phase 3 | Complete | Test-first discipline in AGENTS.md |
+| TEST-02 | Phase 3 | Complete | Test gate in verify-phase |
+| TEST-03 | Phase 3 | Complete | Build verification in verify-phase |
+| TEST-04 | Phase 3 | Complete | Error surfacing in execute-phase |
+| BROW-02 | Phase 3 | Complete | Xvfb/Playwright in verify-phase |
+| BROW-03 | Phase 3 | Complete | Browser testing checklist |
 | PROA-01 | Phase 4 | Pending | Heartbeat cron job |
 | PROA-02 | Phase 4 | Pending | Self-directed phase transitions |
 | PROA-03 | Phase 4 | Pending | Configurable proactivity schedule |
@@ -146,4 +146,4 @@ Deferred to future release. Tracked but not in current roadmap.
 
 ---
 *Requirements defined: 2026-02-14*
-*Last updated: 2026-02-15 — Phase 2 requirements (GSD-01–05, DOCS-01, BROW-01) marked complete*
+*Last updated: 2026-02-15 — Phase 3 requirements (GIT-01–04, TEST-01–04, BROW-02–03) marked complete*

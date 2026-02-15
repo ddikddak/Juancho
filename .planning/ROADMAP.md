@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Developer Identity & Persona** - Rewrite system prompts and agent identity for coding-focused developer
 - [x] **Phase 2: GSD Pipeline Integration** - Build .planning/ workspace structure and orchestration tools
-- [ ] **Phase 3: Git & Testing Workflow** - Automated phase commits, test enforcement, and browser research
+- [x] **Phase 3: Git & Testing Workflow** - Automated phase commits, test enforcement, and browser research
 - [ ] **Phase 4: Proactive Autonomy & UX** - Cron/heartbeat execution, Telegram commands, and onboarding flow
 
 ## Phase Details
@@ -67,9 +67,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 03-01-PLAN.md -- Enhance execute-phase with feature branching, PR creation, and test enforcement gate
-- [ ] 03-02-PLAN.md -- Enhance verify-phase with build verification, test suite gate, and browser testing
-- [ ] 03-03-PLAN.md -- Enhance plan-phase with test command requirements, update AGENTS.md with test-first discipline
+- [x] 03-01-PLAN.md -- Enhance execute-phase with feature branching, PR creation, and test enforcement gate
+- [x] 03-02-PLAN.md -- Enhance verify-phase with build verification, test suite gate, and browser testing
+- [x] 03-03-PLAN.md -- Enhance plan-phase with test command requirements, update AGENTS.md with test-first discipline
 
 ### Phase 4: Proactive Autonomy & UX
 **Goal**: Juancho executes work autonomously via cron/heartbeat, exposes functionality through Telegram commands, and provides polished onboarding experience
@@ -106,9 +106,9 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Developer Identity & Persona | 1/1 | Complete | 2026-02-15 |
 | 2. GSD Pipeline Integration | 2/2 | Complete | 2026-02-15 |
-| 3. Git & Testing Workflow | 0/3 | Planned | - |
+| 3. Git & Testing Workflow | 3/3 | Complete | 2026-02-15 |
 | 4. Proactive Autonomy & UX | 0/? | Not started | - |
 
 ---
 *Roadmap created: 2026-02-14*
-*Last updated: 2026-02-15 (Phase 2 complete — 8 GSD workspace skills + AGENTS.md wiring)*
+*Last updated: 2026-02-15 (Phase 3 complete — git workflow, test enforcement, browser testing)*
