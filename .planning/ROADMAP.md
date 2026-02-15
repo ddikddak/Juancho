@@ -92,10 +92,13 @@ Plans:
   14. Multi-provider AI support verified (inherited from OpenClaw - Claude, OpenAI, Gemini, Ollama)
   15. VPS deployment verified with headless browser infrastructure (inherited from OpenClaw)
   16. Upstream sync capability verified (can pull OpenClaw improvements without breaking customizations)
-**Plans**: TBD
+**Plans**: 4 plans
 
 Plans:
-- [ ] 04-01: [Plan description TBD during planning]
+- [ ] 04-01-PLAN.md -- Configure heartbeat for proactive autonomous execution (openclaw.json + heartbeat.md)
+- [ ] 04-02-PLAN.md -- Create 5 Telegram command wrapper skills (/status, /commit, /test, /phase, /research)
+- [ ] 04-03-PLAN.md -- Create onboarding skill, enhance execute-phase with work logging, enhance verify-phase with doc generation
+- [ ] 04-04-PLAN.md -- Update AGENTS.md with Phase 4 capabilities, verify inherited infrastructure (INFR-01-04)
 
 ## Progress
 
@@ -107,8 +110,8 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. Developer Identity & Persona | 1/1 | Complete | 2026-02-15 |
 | 2. GSD Pipeline Integration | 2/2 | Complete | 2026-02-15 |
 | 3. Git & Testing Workflow | 3/3 | Complete | 2026-02-15 |
-| 4. Proactive Autonomy & UX | 0/? | Not started | - |
+| 4. Proactive Autonomy & UX | 0/4 | Planned | - |
 
 ---
 *Roadmap created: 2026-02-14*
-*Last updated: 2026-02-15 (Phase 3 complete — git workflow, test enforcement, browser testing)*
+*Last updated: 2026-02-15 (Phase 4 planned -- heartbeat, Telegram commands, onboarding, docs/logging, infra verification)*
