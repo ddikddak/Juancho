@@ -13,7 +13,7 @@ Transform OpenClaw into Juancho, an autonomous AI developer that follows structu
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Developer Identity & Persona** - Rewrite system prompts and agent identity for coding-focused developer
-- [ ] **Phase 2: GSD Pipeline Integration** - Build .planning/ workspace structure and orchestration tools
+- [x] **Phase 2: GSD Pipeline Integration** - Build .planning/ workspace structure and orchestration tools
 - [ ] **Phase 3: Git & Testing Workflow** - Automated phase commits, test enforcement, and browser research
 - [ ] **Phase 4: Proactive Autonomy & UX** - Cron/heartbeat execution, Telegram commands, and onboarding flow
 
@@ -47,8 +47,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md -- Create 6 GSD workspace skills (new-project, discuss-phase, research-phase, plan-phase, execute-phase, verify-phase)
-- [ ] 02-02-PLAN.md -- Create status/resume skills, update AGENTS.md with GSD pipeline references and autonomy levels
+- [x] 02-01-PLAN.md -- Create 6 GSD workspace skills (new-project, discuss-phase, research-phase, plan-phase, execute-phase, verify-phase)
+- [x] 02-02-PLAN.md -- Create status/resume skills, update AGENTS.md with GSD pipeline references and autonomy levels
 
 ### Phase 3: Git & Testing Workflow
 **Goal**: Every phase produces commits with conventional format, tests run automatically, phase transitions require passing test suite, and browser testing verifies built features
@@ -103,10 +103,10 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Developer Identity & Persona | 1/1 | Complete | 2026-02-15 |
-| 2. GSD Pipeline Integration | 0/2 | Not started | - |
+| 2. GSD Pipeline Integration | 2/2 | Complete | 2026-02-15 |
 | 3. Git & Testing Workflow | 0/? | Not started | - |
 | 4. Proactive Autonomy & UX | 0/? | Not started | - |
 
 ---
 *Roadmap created: 2026-02-14*
-*Last updated: 2026-02-15 (Phase 2 planned — 2 plans in 1 wave, parallel execution)*
+*Last updated: 2026-02-15 (Phase 2 complete — 8 GSD workspace skills + AGENTS.md wiring)*

@@ -16,11 +16,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### GSD Workflow Pipeline
 
-- [ ] **GSD-01**: Full GSD pipeline integrated (.planning/ directory with research, requirements, roadmap, phases), reusing OpenClaw's workspace directory and file I/O tools
-- [ ] **GSD-02**: Intensive project definition stage at task start (structured questioning before coding), leveraging OpenClaw's existing conversation/session system
-- [ ] **GSD-03**: Phase-based execution: research → plan → build → test per phase, orchestrated via OpenClaw's tool system
-- [ ] **GSD-04**: Configurable autonomy levels (user decides how much Juancho asks vs. decides), stored in workspace config
-- [ ] **GSD-05**: Task stack tracking across all phases (what's done, in progress, blocked, pending), persisted in .planning/ state files
+- [x] **GSD-01**: Full GSD pipeline integrated (.planning/ directory with research, requirements, roadmap, phases), reusing OpenClaw's workspace directory and file I/O tools
+- [x] **GSD-02**: Intensive project definition stage at task start (structured questioning before coding), leveraging OpenClaw's existing conversation/session system
+- [x] **GSD-03**: Phase-based execution: research → plan → build → test per phase, orchestrated via OpenClaw's tool system
+- [x] **GSD-04**: Configurable autonomy levels (user decides how much Juancho asks vs. decides), stored in workspace config
+- [x] **GSD-05**: Task stack tracking across all phases (what's done, in progress, blocked, pending), persisted in .planning/ state files
 
 ### Proactive Autonomy (Cron/Heartbeat)
 
@@ -47,13 +47,13 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Browser & Research
 
-- [ ] **BROW-01**: Browser research phase before coding (docs, APIs, patterns, examples)
+- [x] **BROW-01**: Browser research phase before coding (docs, APIs, patterns, examples)
 - [ ] **BROW-02**: Headless browser on VPS with Xvfb for reliable browser automation
 - [ ] **BROW-03**: Web app testing via browser (verify built features actually work)
 
 ### Documentation
 
-- [ ] **DOCS-01**: GSD planning docs per project (.planning/ with research, requirements, roadmap)
+- [x] **DOCS-01**: GSD planning docs per project (.planning/ with research, requirements, roadmap)
 - [ ] **DOCS-02**: Code documentation generation (README, API docs, inline comments)
 - [ ] **DOCS-03**: Work logs with decisions, reasoning, and tradeoffs documented
 
@@ -106,13 +106,13 @@ Deferred to future release. Tracked but not in current roadmap.
 |-------------|-------|--------|-------|
 | IDEN-01 | Phase 1 | Complete | Core system prompts rewrite |
 | IDEN-03 | Phase 1 | Complete | Developer persona in interactions |
-| GSD-01 | Phase 2 | Pending | .planning/ structure |
-| GSD-02 | Phase 2 | Pending | Intensive questioning stage |
-| GSD-03 | Phase 2 | Pending | Research → plan → build → test |
-| GSD-04 | Phase 2 | Pending | Configurable autonomy |
-| GSD-05 | Phase 2 | Pending | Task stack tracking |
-| DOCS-01 | Phase 2 | Pending | GSD planning docs |
-| BROW-01 | Phase 2 | Pending | Browser research before coding |
+| GSD-01 | Phase 2 | Complete | .planning/ structure |
+| GSD-02 | Phase 2 | Complete | Intensive questioning stage |
+| GSD-03 | Phase 2 | Complete | Research → plan → build → test |
+| GSD-04 | Phase 2 | Complete | Configurable autonomy |
+| GSD-05 | Phase 2 | Complete | Task stack tracking |
+| DOCS-01 | Phase 2 | Complete | GSD planning docs |
+| BROW-01 | Phase 2 | Complete | Browser research before coding |
 | GIT-01 | Phase 3 | Pending | Conventional commits |
 | GIT-02 | Phase 3 | Pending | Feature branches |
 | GIT-03 | Phase 3 | Pending | Pull request generation |
@@ -146,4 +146,4 @@ Deferred to future release. Tracked but not in current roadmap.
 
 ---
 *Requirements defined: 2026-02-14*
-*Last updated: 2026-02-15 — Phase 1 requirements (IDEN-01, IDEN-03) marked complete*
+*Last updated: 2026-02-15 — Phase 2 requirements (GSD-01–05, DOCS-01, BROW-01) marked complete*
