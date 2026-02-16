@@ -41,7 +41,7 @@ Key decisions carried forward:
 
 - Workspace-only customization (zero src/ changes) — maintain upstream sync
 - Skills under 350 lines / 15k chars, bootstrap files under 20k total
-- GSD templates referenced by path (no content duplication)
+- Templates and methodology embedded in workspace (self-contained)
 
 ### Pending Todos
 
@@ -57,7 +57,7 @@ None.
 Last session: 2026-02-15
 Stopped at: v1.0 milestone archived
 Resume file: None
-Next: /gsd:new-milestone to start next milestone cycle
+Next: /new-milestone to start next milestone cycle
 
 ---
 *State initialized: 2026-02-14*
