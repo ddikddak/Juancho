@@ -153,11 +153,22 @@ export function buildServiceEnvironment(params: {
     launchdLabel ||
     (process.platform === "darwin" ? resolveGatewayLaunchAgentLabel(profile) : undefined);
   const systemdUnit = `${resolveGatewaySystemdServiceName(profile)}.service`;
-  const stateDir = env.OPENCLAW_STATE_DIR;
-  const configPath = env.OPENCLAW_CONFIG_PATH;
+  const stateDir = env.JUANCHO_STATE_DIR || env.OPENCLAW_STATE_DIR;
+  const configPath = env.JUANCHO_CONFIG_PATH || env.OPENCLAW_CONFIG_PATH;
   return {
     HOME: env.HOME,
     PATH: buildMinimalServicePath({ env }),
+    JUANCHO_PROFILE: profile,
+    JUANCHO_STATE_DIR: stateDir,
+    JUANCHO_CONFIG_PATH: configPath,
+    JUANCHO_GATEWAY_PORT: String(port),
+    JUANCHO_GATEWAY_TOKEN: token,
+    JUANCHO_LAUNCHD_LABEL: resolvedLaunchdLabel,
+    JUANCHO_SYSTEMD_UNIT: systemdUnit,
+    JUANCHO_SERVICE_MARKER: GATEWAY_SERVICE_MARKER,
+    JUANCHO_SERVICE_KIND: GATEWAY_SERVICE_KIND,
+    JUANCHO_SERVICE_VERSION: VERSION,
+    // Legacy compat: downstream code may still read OPENCLAW_ prefixed vars
     OPENCLAW_PROFILE: profile,
     OPENCLAW_STATE_DIR: stateDir,
     OPENCLAW_CONFIG_PATH: configPath,
@@ -175,11 +186,19 @@ export function buildNodeServiceEnvironment(params: {
   env: Record<string, string | undefined>;
 }): Record<string, string | undefined> {
   const { env } = params;
-  const stateDir = env.OPENCLAW_STATE_DIR;
-  const configPath = env.OPENCLAW_CONFIG_PATH;
+  const stateDir = env.JUANCHO_STATE_DIR || env.OPENCLAW_STATE_DIR;
+  const configPath = env.JUANCHO_CONFIG_PATH || env.OPENCLAW_CONFIG_PATH;
   return {
     HOME: env.HOME,
     PATH: buildMinimalServicePath({ env }),
+    JUANCHO_STATE_DIR: stateDir,
+    JUANCHO_CONFIG_PATH: configPath,
+    JUANCHO_LAUNCHD_LABEL: resolveNodeLaunchAgentLabel(),
+    JUANCHO_SYSTEMD_UNIT: resolveNodeSystemdServiceName(),
+    JUANCHO_SERVICE_MARKER: NODE_SERVICE_MARKER,
+    JUANCHO_SERVICE_KIND: NODE_SERVICE_KIND,
+    JUANCHO_SERVICE_VERSION: VERSION,
+    // Legacy compat
     OPENCLAW_STATE_DIR: stateDir,
     OPENCLAW_CONFIG_PATH: configPath,
     OPENCLAW_LAUNCHD_LABEL: resolveNodeLaunchAgentLabel(),

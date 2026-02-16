@@ -337,9 +337,9 @@ function resolveHomeDisplayPrefix(): { home: string; prefix: string } | undefine
   if (!home) {
     return undefined;
   }
-  const explicitHome = process.env.OPENCLAW_HOME?.trim();
+  const explicitHome = process.env.JUANCHO_HOME?.trim() || process.env.OPENCLAW_HOME?.trim();
   if (explicitHome) {
-    return { home, prefix: "$OPENCLAW_HOME" };
+    return { home, prefix: process.env.JUANCHO_HOME?.trim() ? "$JUANCHO_HOME" : "$OPENCLAW_HOME" };
   }
   return { home, prefix: "~" };
 }

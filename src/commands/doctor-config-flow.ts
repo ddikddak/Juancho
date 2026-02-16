@@ -571,7 +571,7 @@ export async function loadAndMaybeMigrateDoctorConfig(params: {
       note(lines, "Doctor changes");
     } else {
       note(lines, "Unknown config keys");
-      fixHints.push('Run "openclaw doctor --fix" to remove these keys.');
+      fixHints.push(`Run "${formatCliCommand("openclaw doctor --fix")}" to remove these keys.`);
     }
   }
 

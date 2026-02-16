@@ -26,11 +26,12 @@ const formatLine = (label: string, value: string) => {
 };
 
 function resolveLaunchAgentLabel(args?: { env?: Record<string, string | undefined> }): string {
-  const envLabel = args?.env?.OPENCLAW_LAUNCHD_LABEL?.trim();
+  const envLabel =
+    args?.env?.JUANCHO_LAUNCHD_LABEL?.trim() || args?.env?.OPENCLAW_LAUNCHD_LABEL?.trim();
   if (envLabel) {
     return envLabel;
   }
-  return resolveGatewayLaunchAgentLabel(args?.env?.OPENCLAW_PROFILE);
+  return resolveGatewayLaunchAgentLabel(args?.env?.JUANCHO_PROFILE || args?.env?.OPENCLAW_PROFILE);
 }
 
 function resolveLaunchAgentPlistPathForLabel(
