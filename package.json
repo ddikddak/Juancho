@@ -1,17 +1,17 @@
 {
-  "name": "openclaw",
+  "name": "juancho",
   "version": "2026.2.13",
   "description": "Multi-channel AI gateway with extensible messaging integrations",
   "keywords": [],
   "license": "MIT",
   "author": "",
   "bin": {
-    "openclaw": "openclaw.mjs"
+    "juancho": "juancho.mjs"
   },
   "files": [
     "CHANGELOG.md",
     "LICENSE",
-    "openclaw.mjs",
+    "juancho.mjs",
     "README-header.png",
     "README.md",
     "assets/",
@@ -32,7 +32,7 @@
       "types": "./dist/plugin-sdk/account-id.d.ts",
       "default": "./dist/plugin-sdk/account-id.js"
     },
-    "./cli-entry": "./openclaw.mjs"
+    "./cli-entry": "./juancho.mjs"
   },
   "scripts": {
     "android:assemble": "cd apps/android && ./gradlew :app:assembleDebug",
@@ -73,8 +73,8 @@
     "mac:package": "bash scripts/package-mac-app.sh",
     "mac:restart": "bash scripts/restart-mac.sh",
     "moltbot:rpc": "node scripts/run-node.mjs agent --mode rpc --json",
-    "openclaw": "node scripts/run-node.mjs",
-    "openclaw:rpc": "node scripts/run-node.mjs agent --mode rpc --json",
+    "juancho": "node scripts/run-node.mjs",
+    "juancho:rpc": "node scripts/run-node.mjs agent --mode rpc --json",
     "plugins:sync": "node --import tsx scripts/sync-plugin-versions.ts",
     "prepack": "pnpm build && pnpm ui:build",
     "prepare": "command -v git >/dev/null 2>&1 && git config core.hooksPath git-hooks || exit 0",
